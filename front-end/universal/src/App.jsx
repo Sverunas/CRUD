@@ -2,14 +2,15 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
-import Expenses from "./pages/Expenses.jsx";
-import Incomes from "./pages/Incomes.jsx";
+import Books from "./pages/Books.jsx";
+import Categories from "./pages/Categories.jsx";
 import Analytics from "./pages/Analytics.jsx";
 import Comment from "./pages/Comment.jsx";
 import Product from "./pages/Product.jsx";
 import ProductList from "./pages/ProductList.jsx";
 import Header from "./components/Header";
 import Main from "./pages/Main";
+import Login from "./pages/Login";
 
 const App = () => {
   return (
@@ -18,10 +19,10 @@ const App = () => {
       <Sidebar>
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/expenses" element={<Expenses />} />
-          <Route path="/incomes" element={<Incomes />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/book" element={<Books />} />
+          <Route path="/categories" element={<Categories />} />
           <Route path="/comment" element={<Comment />} />
-          <Route path="/analytics" element={<Analytics />} />
           <Route path="/product" element={<Product />} />
           <Route path="/productList" element={<ProductList />} />
         </Routes>

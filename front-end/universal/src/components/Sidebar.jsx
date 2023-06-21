@@ -10,7 +10,9 @@ import {
   FaPlus,
   FaCog,
   FaInfoCircle,
-  FaMinus
+  FaMinus,
+  FaHome
+  
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
@@ -18,25 +20,21 @@ const Sidebar = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   const menuItem = [
-    // {
-    //   path: "/",
-    //   name: "Linkas į logo",
-    //   icon: <FaPlus style={{ color: "red" }} />,
-    // },
+
     {
-      path: "/expenses",
-      name: "Įvesti išlaidas",
-      icon: <FaMinus style={{ color: "red" }} />,
+      path: "/",
+      name: "Pradinis",
+      icon: <FaHome style={{ color: "red" }} />,
     },
-    {
-      path: "/incomes",
-      name: "Įvesti pajamas",
-      icon: <FaPlus style={{ color: "#44ff00" }} />,
-    },
-    {
-      path: "/analytics",
-      name: "Išlaidų išklotinė",
+     {
+      path: "/book",
+      name: "Įvesti Knygą",
       icon: <FaThList style={{ color: "yellow" }} />,
+    },
+    {
+      path: "/categories",
+      name: "Įvesti kategoriją",
+      icon: <FaPlus style={{ color: "#44ff00" }} />,
     },
     {
       path: "/comment",

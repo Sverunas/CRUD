@@ -1,3 +1,6 @@
 2023-06-14 11:21:32 jdbc[13]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]category"; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT"; SQL statement:
 category [42001-214]
+2023-06-19 23:29:16 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "expenses""categories" not found; SQL statement:
+SELECT * FROM "expenses""categories" [42102-214]
